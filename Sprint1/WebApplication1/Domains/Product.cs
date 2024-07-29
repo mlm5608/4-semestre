@@ -16,6 +16,8 @@ namespace WebApplication1.Domains
         [BsonElement("price")]
         public decimal Price { get; set; }
 
+        public Order? order { get; set; }
+
         public Dictionary<string, string> AdditonalAtributes{ get; set; }
 
         public Product()

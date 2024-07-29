@@ -9,23 +9,23 @@ namespace WebApplication1.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
-    public class ProductController : ControllerBase
+    public class ClientController : ControllerBase
     {
-        private readonly IMongoCollection<Product> _product;
+        private readonly IMongoCollection<Client> _client;
 
-        public ProductController(MongoDbService service)
+        public ClientController(MongoDbService service)
         {
-            _product = service.GetDatabase.GetCollection<Product>("product");
+            _client = service.GetDatabase.GetCollection<Client>("client");
         }
 
         [HttpGet]
 
-        public async Task<ActionResult<List<Product>>> Get()
+        public async Task<ActionResult<List<Client>>> Get()
         {
             try
             {
-                var products = await _product.Find(FilterDefinition<Product>.Empty).ToListAsync();
-                return Ok(products);
+                var clients = await _client.Find(FilterDefinition<Client>.Empty).ToListAsync();
+                return Ok(clients);
             }
             catch (Exception e)
             {
@@ -35,12 +35,12 @@ namespace WebApplication1.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult> Post(Product product)
+        public async Task<ActionResult> Post(Client client)
         {
             try
             {
-                await _product.InsertOneAsync(product);
-                return Ok(product);
+                await _client.InsertOneAsync(client);
+                return Ok(client);
             }
             catch (Exception e)
             {
@@ -53,7 +53,7 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                var lista = await _product.Find(Builders<Product>.Filter.Eq(m => m.Id, id)).ToListAsync();
+                var lista = await _client.Find(Builders<Client>.Filter.Eq(m => m.Id, id)).ToListAsync();
 
                 return lista is not null ? Ok(lista) : NotFound();
             }
@@ -68,32 +68,32 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                await _product.DeleteOneAsync(Builders<Product>.Filter.Eq(m => m.Id, id));
+                await _client.DeleteOneAsync(Builders<Client>.Filter.Eq(m => m.Id, id));
                 return Ok();
             }
             catch (Exception e)
             {
                 return BadRequest(e.Message);
             }
-            
+
         }
 
         [HttpPut]
-        public async Task<ActionResult> Put( Product p )
+        public async Task<ActionResult> Put(Client c)
         {
             try
             {
-               //buscar por id (filtro)
-               var filter = Builders<Product>.Filter.Eq(x => x.Id, p.Id);
+                //buscar por id (filtro)
+                var filter = Builders<Client>.Filter.Eq(x => x.Id, c.Id);
 
                 if (filter != null)
                 {
                     //substituindo o objeto buscado pelo novo produto
-                    await _product.ReplaceOneAsync(filter, p);
+                    await _client.ReplaceOneAsync(filter, c);
 
                     return Ok();
                 }
-                
+
                 return NotFound();
             }
             catch (Exception e)
