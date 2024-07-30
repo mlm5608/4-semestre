@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using WebApplication1.Domains;
 using WebApplication1.Services;
+using WebApplication1.ViewModels;
 
 namespace WebApplication1.Controllers
 {
@@ -12,10 +13,14 @@ namespace WebApplication1.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IMongoCollection<Order> _order;
+        private readonly IMongoCollection<Client> _client;
+        private readonly IMongoCollection<Product> _product;
 
         public OrderController(MongoDbService service)
         {
             _order = service.GetDatabase.GetCollection<Order>("order");
+            _client = service.GetDatabase.GetCollection<Client>("client");
+            _product = service.GetDatabase.GetCollection<Product>("product");
         }
 
         [HttpGet]
@@ -24,7 +29,9 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                var orders = await _order.Find(FilterDefinition<Order>.Empty).ToListAsync();
+                var orders = await _order.Find(FilterDefinition<Order>.Empty)
+                    .ToListAsync();
+
                 return Ok(orders);
             }
             catch (Exception e)
@@ -35,10 +42,41 @@ namespace WebApplication1.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult> Post(Order order)
+        public async Task<ActionResult> Post(OrderViewModel orderV)
         {
             try
             {
+                Order order = new Order();
+
+                order.Id = orderV.Id;
+                order.Date = orderV.Date;
+                order.Status = orderV.Status;
+                order.ProductIds = orderV.ProductIds;
+                order.ClientId = orderV.ClientId;
+
+                var client = await _client.Find(m => m.Id == order.ClientId).FirstOrDefaultAsync();
+                if (client == null)
+                {
+                    return NotFound("Cliente não encontrado");
+                }
+                order.Client = client;
+
+                List<Product> produtos = new List<Product>();
+                var produtosBuscados = order.ProductIds;
+                var ListaTodosProdutos = await _product.Find(FilterDefinition<Product>.Empty).ToListAsync();
+
+                foreach(string Id in produtosBuscados!)
+                {
+                    foreach (Product p in ListaTodosProdutos)
+                    {
+                        if (Id == p.Id)
+                        {
+                            produtos.Add(p);
+                        }
+                    }
+                }
+                order.Products = produtos;
+
                 await _order.InsertOneAsync(order);
                 return Ok(order);
             }

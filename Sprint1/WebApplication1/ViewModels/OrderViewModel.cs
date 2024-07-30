@@ -1,9 +1,11 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using WebApplication1.Domains;
+using System.Text.Json.Serialization;
 
-namespace WebApplication1.Domains
+namespace WebApplication1.ViewModels
 {
-    public class Order
+    public class OrderViewModel
     {
         [BsonId]
         [BsonElement("_id"), BsonRepresentation(BsonType.ObjectId)]
@@ -17,11 +19,17 @@ namespace WebApplication1.Domains
 
         [BsonElement("ProductId")]
         public List<string>? ProductIds { get; set; }
+
+        [BsonIgnore]
+        [JsonIgnore]
         public List<Product>? Products { get; set; }
 
 
         [BsonElement("ClientId")]
         public string? ClientId { get; set; }
+
+        [BsonIgnore]
+        [JsonIgnore]
         public Client? Client { get; set; }
     }
 }
