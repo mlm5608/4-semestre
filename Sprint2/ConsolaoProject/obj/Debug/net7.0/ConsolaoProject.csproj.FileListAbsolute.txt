@@ -1,0 +1,15 @@
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\bin\Debug\net7.0\ConsolaoProject.exe
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\bin\Debug\net7.0\ConsolaoProject.deps.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\bin\Debug\net7.0\ConsolaoProject.runtimeconfig.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\bin\Debug\net7.0\ConsolaoProject.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\bin\Debug\net7.0\ConsolaoProject.pdb
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.AssemblyInfoInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.AssemblyInfo.cs
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.csproj.CoreCompileInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.sourcelink.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\refint\ConsolaoProject.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.pdb
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ConsolaoProject.genruntimeconfig.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\ConsolaoProject\obj\Debug\net7.0\ref\ConsolaoProject.dll
