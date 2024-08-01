@@ -1,0 +1,15 @@
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\bin\Debug\net7.0\Exercicio_1-solução.exe
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\bin\Debug\net7.0\Exercicio_1-solução.deps.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\bin\Debug\net7.0\Exercicio_1-solução.runtimeconfig.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\bin\Debug\net7.0\Exercicio_1-solução.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\bin\Debug\net7.0\Exercicio_1-solução.pdb
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.AssemblyInfoInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.AssemblyInfo.cs
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.csproj.CoreCompileInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.sourcelink.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\refint\Exercicio_1-solução.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.pdb
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\Exercicio_1-solução.genruntimeconfig.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Exercicios_01-08\Exercicio_1\Exercicio_1-solução\obj\Debug\net7.0\ref\Exercicio_1-solução.dll
