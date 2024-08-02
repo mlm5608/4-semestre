@@ -9,8 +9,7 @@ namespace Exercicio_4_solucao
     public class ControleEstoque
     {
         
-
-        public static ProdutoDomain AdicionarProduto(string nome, int quantidade)
+        public static List<ProdutoDomain> AdicionarProduto(string nome, int quantidade)
         {
             List<ProdutoDomain> products = new List<ProdutoDomain>
             {
@@ -24,8 +23,7 @@ namespace Exercicio_4_solucao
                 if (p.Name == nome)
                 {
                     p.Quantity = p.Quantity + quantidade;
-
-                    return p;
+                    return products;
                 }
             }
 
@@ -37,7 +35,29 @@ namespace Exercicio_4_solucao
 
             products.Add(produtoNovo);
 
-            return produtoNovo;
+            return products;
+        }
+
+        public static Object BuscarPeloNome(string nome)
+        {
+            List<ProdutoDomain> products = new List<ProdutoDomain>
+            {
+                new ProdutoDomain{Name = "notebook", Quantity = 10 },
+                new ProdutoDomain{Name = "celular", Quantity = 25 },
+                new ProdutoDomain{Name = "fone de ouvido", Quantity = 50 }
+            };
+
+            foreach (var p in products)
+            {
+                if (p.Name == nome)
+                {
+                    return p;
+                }
+            }
+
+            object vazio = new Object();
+
+            return vazio;
         }
 
 

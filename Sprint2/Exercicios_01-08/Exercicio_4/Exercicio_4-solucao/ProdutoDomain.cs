@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercicio_4_solucao
 {
-    internal class ProdutoDomain
+    public class ProdutoDomain
     {
         public string? Name { get; set; }
         public int Quantity { get; set; }
