@@ -1,0 +1,8 @@
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.csproj.AssemblyReference.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.AssemblyInfoInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.AssemblyInfo.cs
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.csproj.CoreCompileInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net7.0\ProjetoAtividade0508.sourcelink.json
