@@ -136,3 +136,5 @@ C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade05
 C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net8.0\ProjetoAtividade0508.pdb
 C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net8.0\ProjetoAtividade0508.genruntimeconfig.cache
 C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\obj\Debug\net8.0\ref\ProjetoAtividade0508.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint2\Projeto_05-08\ProjetoAtividade0508\bin\Debug\net8.0\Moq.dll

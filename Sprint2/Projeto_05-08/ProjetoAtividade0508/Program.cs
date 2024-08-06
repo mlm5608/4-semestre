@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ProjetoAtividade0508.Contexts;
+using ProjetoAtividade0508.Interfaces;
 
 namespace ProjetoAtividade0508
 {
@@ -16,7 +17,7 @@ namespace ProjetoAtividade0508
             // Add services to the container.
             builder.Services.AddControllers();
 
-
+            builder.Services.AddScoped<IProductRepository>();
 
 
             builder.Services.AddDbContext<yContext>(options =>
