@@ -1,0 +1,86 @@
+Lógica de programação
+
+=> operadores
+
+- Lógicos
+	e (&&)/ ou (||)/ não ( !)
+- Aritméticos
+	soma (+)
+	subtração (-)
+	multiplicação (*)
+	divisão (/)
+	modular (%)
+
+- Comparação
+	igual a (==)
+	estritamente igual (===) => (Java Script)
+	diferente (!=)
+	estritamente diferente (!==) => (Java Script)
+	maior igual a (>=)
+	menor igual a (<=)
+	maior que (>)
+	menor que (<)
+- Atribuição
+	(=) atribui valor a uma variável ou constante
+
+- Incremento (+=) / (++)
+
+- Decremento (-=) / (--)
+
+=> Estruturas Condicionais
+
+- if (simples)
+	if(condição) //avalia veracidade
+	{
+	  //bloco de código
+	}
+
+- if/else (composto)
+	if(condição) //avalia veracidade
+	{
+	  //bloco de código
+	}
+	else
+	{
+	  //bloco de código
+	}
+
+- elseIf (encadeado ou aninhado)
+
+	if(condição) //avalia veracidade
+	{
+	  //bloco de código
+	}
+	elseif(condição) //avalia veracidade
+	{
+	  //bloco de código
+	}
+	else
+	{
+	  //bloco de código
+	}
+
+- if ternário
+
+	condição ? se true : se false
+
+- switch case
+
+Switch (variavel)
+	{
+		case valor: 
+		//bloco de código
+		break;
+		
+		case valor: 
+		//bloco de código
+		break;
+
+		default:
+    		// code block
+    		break;
+	}
+	
+
+
+

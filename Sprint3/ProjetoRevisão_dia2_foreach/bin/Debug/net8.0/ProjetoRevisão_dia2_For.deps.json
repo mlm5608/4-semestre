@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ProjetoRevisão_dia2_For/1.0.0": {
+        "runtime": {
+          "ProjetoRevisão_dia2_For.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoRevisão_dia2_For/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

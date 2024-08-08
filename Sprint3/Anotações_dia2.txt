@@ -1,0 +1,22 @@
+Estruturas de repetição
+
+for - quando sabemos exatamente a quantidade de vezes que se deseja executar um looping
+
+for(int x = 0; x >= 0; x++;)
+{
+	//bloco de código
+}
+parte 1: variável de inicialização
+parte 2: consição
+parte 3: Interador de incremento(++)/decremento(--)
+
+while - executa um looping enquanto a condição for avaliada como true
+
+while(condição)
+{
+	//bloco de codigo
+}
+
+doWhile - executa ao menos uma vez o código antes de fazer a verificação
+
+foreach - percorre todos os elementos de uma lista
