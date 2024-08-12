@@ -1,0 +1,15 @@
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\bin\Debug\net8.0\Projeto3.exe
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\bin\Debug\net8.0\Projeto3.deps.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\bin\Debug\net8.0\Projeto3.runtimeconfig.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\bin\Debug\net8.0\Projeto3.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\bin\Debug\net8.0\Projeto3.pdb
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.AssemblyInfoInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.AssemblyInfo.cs
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.csproj.CoreCompileInputs.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.sourcelink.json
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\refint\Projeto3.dll
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.pdb
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\Projeto3.genruntimeconfig.cache
+C:\Users\50866670890\Desktop\4-semestre\Sprint3\ProjetoAvaliação\Projeto3\obj\Debug\net8.0\ref\Projeto3.dll
