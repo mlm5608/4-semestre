@@ -21,6 +21,7 @@ export function Modal({ openModal, setOpenModal, list, setListatarefas }) {
           title: text
         });
         setListatarefas([...list]); // Atualize o estado com a nova lista
+        setText("")
         setOpenModal(false)
     }
     return (
