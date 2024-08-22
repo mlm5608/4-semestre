@@ -1,17 +1,61 @@
 .modalBack{
+    margin: 0;
+    padding: 0%;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color:rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .opaco{
     opacity: 1;
     pointer-events: visible;
+    backdrop-filter: blur(2px);
 }
 
 .translucido{
     opacity: 0;
     pointer-events: none;
+}
+
+.modalBox{
+    margin-top: -30PX;
+    width: 715px;
+    height: 387px;
+    background-color: #1E123B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox{
+    width: 63%;
+    height: 37.50%;
+    margin-top: 17px;
+    color: #fcfcfc;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: start;
+}
+
+.inputBox ::placeholder{
+    background-color: #fcfcfc;
+    text-align: flex-start;
+}
+
+.button{
+    color: #fcfcfc;
+    background-color: #6C45CE;
+    border: 2px solid #fcfcfc;
+    font-size: 24px;
+    width: 35%;
+    height: 13.5%;
+    border-radius: 10px;
+    margin-top: 25px;
 }
