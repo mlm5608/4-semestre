@@ -27,8 +27,23 @@
   height: 42px;
   border: 2px solid #fcfcfc;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
 }
+
+.inputHome{
+  background-color: transparent;
+  width: 80%;
+  border: none;
+  color: #fcfcfc;
+  text-align: right;
+}
+.inputHome::placeholder{color: #fcfcfc; font-size: 16px; }
+
 
 .title{
   font-size: 36px;
@@ -47,4 +62,9 @@
   position: relative;
   top: 17px;
   left: 273px;
+}
+
+.list{
+  width: 90%;
+  margin-top: 70px;
 }

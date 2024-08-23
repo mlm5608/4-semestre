@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Card } from './Components/Card/Card';
 import { Modal } from './Components/Modal/Modal';
+import { IoMdSearch } from "react-icons/io";
 function App() {
 
   const [openModal, setOpenModal] = useState(false)
@@ -27,10 +28,11 @@ function App() {
         <div className='Content-Box'>
           <h1 className='title'>{dataAtualFormatada}</h1>
           <div className='InputBox'>
-            <input className='inputHome' onChange={(t) => setTextoBusca(t.target.value)}></input>
+            <IoMdSearch  fill='#fcfcfc' height={"18px"} width={"18px"}/>
+            <input className='inputHome' placeholder='Procurar Tarefa' style={{color: "#fcfcfc"}} onChange={(t) => setTextoBusca(t.target.value)}></input>
           </div>
 
-          <div className={`flex flex-col w-[500px] gap-4 max-h-[176px] scroll-smooth overflow-auto scrollbar-none`}>
+          <div className={"list"}>
             {listatarefas.length === 0 ? (
               <p>Nenhuma tarefa encontrada</p>
             ) : (
@@ -41,8 +43,10 @@ function App() {
                 .map((item) => (
                   <Card
                     key={item.id}
-                    setItems={setListatarefas}
-                    item={listatarefas}
+                    id={item.id}
+                    title={item.title}
+                    lista={listatarefas}
+                    setlista={setListatarefas}
                   />
                 ))
             )}
