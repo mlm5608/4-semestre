@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Atividades";
+}
+
+<header style="width: 100%; display:flex; justify-content: space-around; align-items:center; background-color:blue; margin:0;">
+    <h1 style="color: white">@ViewBag.NomeProfessor</h1>
+    <form asp-controller="Login" asp-action="Logout">
+        <button style="color: white; background-color:transparent; border:none">Sair</button>
+    </form>
+
+    <h2>@ViewBag.NomeTurma</h2>
+
+</header>

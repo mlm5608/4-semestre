@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Principal";
+}
+
+
+
+<form asp-controller="Professor" asp-action="CadastrarTurma">
+    <label>NomeTurma</label>
+    <input type="text" placeholder="nome" name="nomeTurma" required/>
+    <button>Cadastrar Turma</button>
+</form>
+
+<table style="width:90%;display:flex; flex-direction:column ; justify-content:space-around; align-items:center">
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Nome da turma</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var turma in Model)
+        {
+            <tr>
+                <td>@turma.TurmaId</td>
+                <td>@turma.Nome</td>
+                <td>
+                    <div style="display:flex">
+                        <form asp-controller="Professor" asp-action="ExcluirTurma">
+                            <input value={@turma.TurmaId!} name="turmaId" type="hidden"/>
+                            <button type="submit">Excluir</button>
+                        </form>
+                        <form asp-controller="Atividade" asp-action="Index" asp-route-turmaId="@turma.TurmaId">
+                            <input value={@turma.TurmaId!} name="turmaId" type="hidden" />
+                            <button type="submit">Visualizar</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
