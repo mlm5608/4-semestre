@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Principal";
+}
+
+<style>
+    #turma::placeholder {
+        color: rgba(13, 109, 253, 1);
+    }
+</style>
+
+@if (ViewBag.NomeProfessor == null)
+{
+    <a asp-controller="Login">Login</a>
+}
+else
+{
+    <form asp-controller="Professor" asp-action="CadastrarTurma" style="align-self:end; margin-top:40px; margin-right:120px; margin-bottom:50px; gap: 20px;">
+        <input type="text" placeholder="nome da Turma" name="nomeTurma" style="width:210px; height:50px; border: none;border-bottom: 1px solid rgba(13, 109, 253, 1); background-color:white; color: rgba(13, 109, 253, 1); padding-left:10px; margin-right: 20px;" id="turma" required />
+        <button style="width:210px; height:50px; border: 2px solid rgba(13, 109, 253, 1); background-color:white; color: rgba(13, 109, 253, 1);border-radius:10px;">Cadastrar Turma</button>
+    </form>
+
+    <h2 style="align-self: start; margin-left: 150px; margin-bottom:50px;">Sua lista de turmas</h2>
+
+    <table style="width:80%;">
+        <thead style="width:100%">
+            <tr style="width:100%; height:50px;display:flex; flex-direction: row; align-items:center ; border-bottom-color: black; border-bottom-width:2px; border-bottom-style: solid">
+                <th style="width:20%">Número</th>
+                <th style="width:50%">Nome da turma</th>
+                <th style="width:30%">Ações</th>
+            </tr>
+        </thead>
+
+        <tbody style="width:100%">
+            @foreach (var turma in Model)
+            {
+                <tr style="width:100%;height:50px;display:flex; flex-direction: row; align-items:center ; border-bottom-color: black; border-bottom-width:1px; border-bottom-style: solid">
+                    <td style="width:20%; padding-left: 10px;">@turma.TurmaId</td>
+                    <td style="width:50%">@turma.Nome</td>
+                    <td style="width:30%; display: flex; flex-direction:row; ">
+                        <div style="display:flex; gap: 10px">
+                            <form asp-controller="Professor" asp-action="ExcluirTurma" onsubmit="return confirm('Você tem certeza que deseja excluir essa turma?')">
+                                <input value={@turma.TurmaId!} name="turmaId" type="hidden" />
+                                <button type="submit" style="font-size:16px; text-decoration:underline; color:rgba(222, 0, 0, 1); background-color: transparent; border:none">Excluir</button>
+                            </form>
+                            <form asp-controller="Atividade" asp-action="Index" asp-route-turmaId="@turma.TurmaId">
+                                <input value={@turma.TurmaId!} name="turmaId" type="hidden" />
+                                <button type="submit" style="font-size:16px; text-decoration:underline; color:rgba(17, 209, 0, 1); background-color: transparent; border:none">Visualizar</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (TempData["Mensagem"] != null)
+    {
+        <p style="color: red">@TempData["Mensagem"]</p>
+    }
+
+}
